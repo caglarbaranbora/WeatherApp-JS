@@ -12,35 +12,47 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="app">
+    <div class="app">
       <!-- Search Bar -->
-      <div class="searchBar">
-        <input type="text" id="searchBarInput" placeholder="Search by City" />
-        <button type="text" id="searchIcon">
+      <div id="search-bar">
+        <input
+          autocomplete="false"
+          id="search-bar-input"
+          type="text"
+          placeholder="Search by City"
+        />
+        <button id="search-icon" onclick="getWeather()">
           <i class="fa fa-search" aria-hidden="true"></i>
         </button>
       </div>
-      <!-- Date & City -->
-      <div class="info">
+
+      <!-- Date and City -->
+      <div id="info">
         <p id="date"></p>
-        <h3 id="city"></h3>
+        <h4 id="city"></h4>
       </div>
-      <!-- Description -->
-      <div class="description"></div>
-      <!-- Temp -->
-      <div class="temperature"></div>
-      <!-- Extra Info -->
-      <div id="extraInfo">
+
+      <!-- Icon  -->
+      <div id="temp-img"></div>
+
+      <!-- Description of weather -->
+      <p id="description"></p>
+
+      <!-- Temperture -->
+      <div id="temp"></div>
+
+      <!-- Info at the bottom -->
+      <div class="extra-info">
         <div class="col">
           <div class="info">
             <h5>Highs</h5>
-            <p id="tempMax"></p>
+            <p id="temp-max"></p>
           </div>
         </div>
         <div class="col">
           <div class="info">
             <h5>Lows</h5>
-            <p id="tempMin"></p>
+            <p id="temp-min"></p>
           </div>
         </div>
       </div>
